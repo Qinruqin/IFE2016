@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE2016 Task 23</title>
+    <style type="text/css">
+      div{display: inline-block; padding: 20px; text-align: left; border:1px solid #333;}
+      .clearfix:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+      .clearfix {*display: inline-block; *zoom: 100%;}
+      .f-fl{float: left;}
+      .one{display: block;width: 1030px; height: 200px;padding: 20px; margin: 20px;}
+      .two{ width:450px; height: 160px; margin-right: 20px; }
+      .three{ width: 160px; height: 120px; margin-right: 20px;}
+      .two:nth-of-type(2n) , .three:nth-of-type(2n){margin-right: 0;}
+      .three span{display: inline-block; width: 46px; height: 120px; border:1px solid #333;}
+      .form-box{padding: 0; margin-left: 20px;margin-top: 40px; border:none; }
+      .form-box button{width: 80px;height: 30px; }
+      .form-box input{width: 200px; height: 30px;}
+    </style>
+  </head>
+<body>
+  <div class="one clearfix" id="one">a1
+    <div class="two f-fl">b1
+      <div class="three f-fl">c1
+          <span>d1</span>
+          <span>d2</span>
+      </div>
+      <div class="three f-fl">c2
+          <span>d3</span>
+          <span>d4</span>
+      </div>
+    </div>
+    <div class="two f-fl">b2
+      <div class="three f-fl">c3
+          <span>d5</span>
+          <span>d6</span>
+      </div>
+      <div class="three f-fl">c4
+          <span>d7</span>
+          <span>d8</span>
+      </div>
+    </div>
+  </div>
+  <div class="form-box">
+    <button id="pre">前序</button><button id="mid">中序</button><button id="last">后序</button><button id="preSearch">前序搜索</button><button id="lastSearch">后序搜索</button>
+    <input type="text" name="" id="txt">
+  </div>
+  
+  <script type="text/javascript" src="./js/task23.js"></script>
+</body>
+</html>
