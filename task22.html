@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE2016 Task 22</title>
+    <style type="text/css">
+      div{display: inline-block; padding: 20px; border:1px solid #333;}
+      .clearfix:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+      .clearfix {*display: inline-block; *zoom: 100%;}
+      .f-fl{float: left;}
+      .one{display: block;width: 804px; height: 200px;padding: 20px; margin: 20px;}
+      .two{ width:350px; height: 160px; margin-right: 20px; }
+      .three{ width: 122px; height: 120px; margin-right: 20px;}
+      .two:nth-of-type(2n) , .three:nth-of-type(2n){margin-right: 0;}
+      .three span{display: inline-block; width: 56px; height: 120px; border:1px solid #333;}
+      button{width: 80px;height: 30px; margin-top: 40px;}
+      #pre{margin-left: 20px;}
+    </style>
+  </head>
+<body>
+  <div class="one clearfix" id="one" >
+    <div class="two f-fl">
+      <div class="three f-fl">
+          <span></span>
+          <span></span>
+      </div>
+      <div class="three f-fl">
+          <span></span>
+          <span></span>
+      </div>
+    </div>
+    <div class="two f-fl">
+      <div class="three f-fl">
+          <span></span>
+          <span></span>
+      </div>
+      <div class="three f-fl">
+          <span></span>
+          <span></span>
+      </div>
+    </div>
+  </div>
+  <button id="pre">前序</button><button id="mid">中序</button><button id="last">后序</button>
+  
+  <script type="text/javascript" src="./js/task22.js"></script>
+</body>
+</html>
