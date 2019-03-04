@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE2016 Task 24</title>
+    <style type="text/css">
+      div{display: inline-block;margin-right: 20px; padding: 20px; text-align: left; border:1px solid #333;}
+      .clearfix:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+      .clearfix {*display: inline-block; *zoom: 100%;}
+      .f-fl{float: left;}
+      .one{margin: 20px;}
+      .two:last-child , .three:last-child{margin-right: 0;}
+      .form-box{padding: 0; margin-left: 20px; margin-top: 40px; border:none; }
+      .form-box button{width: 80px;height: 30px; }
+      .form-box input{width: 200px; height: 30px;}
+    </style>
+  </head>
+<body>
+  <div class="one clearfix" id="one">a1
+    <div class="two f-fl">b1
+      <div class="three f-fl">c1
+          <div>d1</div>
+          <div>d2</div>
+      </div>
+      <div class="three f-fl">c2
+          <div>d3</div>
+          <div>d4</div>
+      </div>
+    </div>
+    <div class="two f-fl">b2
+      <div class="three f-fl">c3
+          <div>d5</div>
+          <div>d6</div>
+      </div>
+      <div class="three f-fl">c4
+          <div>d7</div>
+          <div>d8</div>
+      </div>
+    </div>
+  </div>
+  <div class="form-box">
+    <button id="del">删除</button>
+    <input type="text" name="" id="txt"><button id="add">添加</button>
+  </div>
+  
+  <script type="text/javascript" src="./js/task24.js"></script>
+</body>
+</html>
