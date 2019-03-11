@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE2016 Task 32</title>
+    <style type="text/css">
+      ul,li{list-style: none;}
+      ul{margin: 20px;font-size: 14px; clear: both;}
+      ul label{display: inline-block; width: 80px; line-height: 40px; text-align: center;}
+      ul input{display: inline-block; width: 300px; height: 40px; padding: 10px; line-height: 40px; border:1px solid #ccc; outline: none; border-radius: 4px;}
+      button{height: 40px;padding: 0 40px; color: #fff; border:none; background: #000; outline: none;}
+      ul li p:nth-of-type(2){margin-left: 80px; }
+      .tip{display: none;}
+      .red{color: #f00;font-size: 14px;}
+      .green{color: #0f0;font-size: 14px;}
+    </style>
+  </head>
+<body>
+  <div id="init-box">
+    <input type="checkbox" name="username" value="name">名称<input type="checkbox" name="psw" value="psw">密码<input type="checkbox" name="psw2" value="psw2">确认密码<input type="checkbox" name="email" value="email">邮箱<input type="checkbox" name="mobile" value="moboile">手机
+    <p><button id="btn">生成</button></p>
+  </div>
+  <ul id="form" class="form">
+  </ul>
+  <script type="text/javascript" src="./js/task32.js"></script>
+</body>
+</html>
