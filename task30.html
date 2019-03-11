@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE2016 Task 30</title>
+    <style type="text/css">
+      div{margin: 20px;font-size: 14px; clear: both;}
+      div label{display: inline-block; width: 80px; text-align: right;}
+      div input{display: inline-block; width: 300px; height: 40px; padding: 10px; line-height: 40px; border:1px solid #ccc; outline: none; border-radius: 4px;}
+      div button{height: 40px;padding: 0 10px; color: #fff; border:none; background: #000; outline: none;}
+      div p:nth-of-type(2){margin-left: 80px; }
+      .tip{display: none;}
+      .red{color: #f00;font-size: 14px;}
+      .green{color: #0f0;font-size: 14px;}
+    </style>
+  </head>
+<body>
+  <form id="formData">
+    <div><p><label>名称：</label> <input type="text" name="username" id="name" /></p>
+      <p id="nameTip" class="tip">名称4~16个字符</p>
+    </div>
+    <div><p><label>密码：</label> <input type="text" name="psw" id="psw" /></p>
+      <p id="pswTip" class="tip">密码6~16个字符</p>
+    </div>
+    <div><p><label>确认密码：</label> <input type="text" name="psw2" id="psw2" /></p>
+      <p id="pswTip2" class="tip">请输入确认密码</p>
+    </div>
+    <div><p><label>邮箱：</label> <input type="text" name="email" id="email" /></p>
+      <p id="emailTip" class="tip">请输入邮箱</p>
+    </div>
+    <div><p><label>手机：</label> <input type="text" name="mobile" id="mobile"  /></p>
+      <p id="mobileTip" class="tip">请输入手机号</p>
+    </div>
+  </form>
+  <script type="text/javascript" src="./js/task30.js"></script>
+</body>
+</html>
