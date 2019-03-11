@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE2016 Task 31</title>
+    <style type="text/css">
+      div{margin: 20px;font-size: 18px; clear: both;}
+      div label{display: inline-block; width: 80px; margin-right: 10px; text-align: center;}
+      div input[type='radio']{display: inline-block; width: 20px; height: 20px; outline: none;}
+      div input[type='text']{display: inline-block; width: 200px;height: 40px;padding: 0 10px; line-height: 40px;border:1px solid #ccc; border-radius: 2px; outline: none;}
+      div select{display: none;}
+      div select:nth-of-type(1),div select:nth-of-type(2){display: inline-block; }
+      select{width: 140px; height: 40px; line-height: 40px; margin-right: 10px;}
+      .input-box{display: none;}
+    </style>
+  </head>
+<body>
+  <div id="ifStudent"><input type="radio" name="student" value='1' checked="checked" />在校生 <input type="radio" name="student" value='0' />非在校生</div>
+  <div id="select-box" class="select-box">
+    <select>
+      <option>北京</option>
+      <option>上海</option>
+    </select>
+    <select>
+      <option>北京大学</option>
+      <option>北京电影学院</option>
+      <option>北京理工大学</option>
+    </select>
+    <select>
+      <option>复旦大学</option>
+      <option>上海交通大学</option>
+      <option>同济大学</option>
+    </select>
+  </div>
+  <div id="input-box" class="input-box">
+    <label>就业单位</label><input type="text" name="unit">
+  </div>
+  <script type="text/javascript" src="./js/task31.js"></script>
+</body>
+</html>
