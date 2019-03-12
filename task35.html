@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE2016 Task 35</title>
+    <style type="text/css">
+    *{margin: 0;padding: 0;}
+    ul,li{list-style: none;display: block;}
+    li{display: inline-block; float: left; width: 40px;height: 40px; text-align: center; line-height: 40px;}
+    .container{float: left; width: 500px;height: 500px;clear: both;}
+    .x-num{height: 40px; padding-left: 40px; clear: both;}
+    .y-num{float: left;width: 40px;}
+    #map{position: relative; float: left; width: 400px;height: 400px; border:1px solid #000;}
+    .mapbox{float: left; width: 39px;height: 39px;border-bottom: 1px solid #ccc;border-right:1px solid #ccc;}
+    .mover{position: absolute;z-index: 999; width: 40px;height: 40px; background: #f00;transition: 0.5s all;  -webkit-transition: 0.5s all; -ms-transition: 0.5s all;}
+    .mover:after{position: absolute; content: ""; display: block; height: 10px;width: 100%; background: #00f;}
+    .control-box{float: right; width: 500px; margin-right: 100px; margin-top: 20px;}
+    .control-box p input{height: 30px; padding: 0 10px; margin-right: 10px; outline: none;}
+    .control-box button{width: 80px;height: 30px;margin-bottom: 10px;margin-right: 10px;line-height: 30px;background: none;border:1px solid #ccc;outline: none;cursor: pointer;}
+    .control-box .txtBox{height: 240px;margin-bottom: 20px;}
+    .txtBox ul{float: left; width: 40px; height: 240px;  background: #ccc; overflow:hidden;}
+    .txtBox ul li{height: 24px;line-height: 24px;}
+    .txtBox textarea{ height: 100%; width: 300px; padding:0 10px; color: #fff; line-height: 24px; border-left: none; background: #000; outline: none;overflow-y:auto; resize: 0;}
+    </style>
+  </head>
+<body>
+  <div class="container">
+    <ul class="x-num">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+    </ul>
+    <ul class="y-num">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+    </ul>
+    <div id="map"></div>
+  </div>
+  <div class="control-box" id="control">
+    <p><button id="do">执行</button><button id="refresh">刷新</button></p>
+    <div class="txtBox">
+      <ul id="num-list"></ul>
+      <textarea id="text"></textarea>
+    </div>
+    <p><button id="go">GO</button><button id="tunL">TUN LEF</button><button id="tunR">TUN RIG</button><button id="tunB">TUN BACK</button></p>
+    <p><button id="traL">TRA LEF</button><button id="traR">TRA RIG</button><button id="traT">TRA TOP</button><button id="traB">TRA BOT</button></p>
+    <p><button id="movL">MOV LEF</button><button id="movR">MOV RIG</button><button id="movT">MOV TOP</button><button id="movB">MOV BOT</button></p>
+  </div>
+  <script type="text/javascript" src="./js/task35.js"></script>
+</body>
+</html>
