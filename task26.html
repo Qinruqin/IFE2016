@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE2016 Task 26</title>
+    <style type="text/css">
+    *{margin: 0 ; padding:0;}
+    .container{float: left; position: relative; width: 600px;height: 600px; margin:0 20px; background: #000;}
+    .planet{position: absolute; top:250px;right: 250px; width: 100px;height: 100px;border-radius: 50%;background: #f00;}
+    .ship-line{position: absolute;border-radius: 50%;border:1px solid #fff;}
+    .ship-line1{top:200px;left:200px;width: 200px; height: 200px;}
+    .text{z-index: 3; position: absolute;top:0;left: 0; width: 100%;}
+    .text span,.text label{display: inline-block; z-index: 3; color:#000;}
+    .ship-line2{top:150px;left:150px;width: 300px; height: 300px;}
+    .ship-line3{top:100px;left:100px;width: 400px; height: 400px;}
+    .ship-line4{top:50px;left:50px;width: 500px;height: 500px;}
+    .ship{position: absolute; top:-30px; left:50%; margin-left: -50px;height:30px;
+      width: 100px; line-height: 30px; text-align: center; overflow: hidden; -webkit-transform-origin: 55px 180px; -webkit-border-radius: 14px; 
+      background-color:rgb(1,0,254);}
+    .bg{position: absolute; top: 0;left:0; z-index: 1;width: 100px;height: 30px; background: #f0f;border-top-left-radius: 14px;border-bottom-left-radius: 14px;}
+    .control-box{margin-left: 700px;}
+    .control-box button{padding:0 20px;height: 30px;margin: 10px;margin-left: 0; line-height: 30px; background: none; border:1px solid #ccc;cursor: pointer;}
+    .commend-box{margin-top: 20px; margin-left: 700px; width: 400px; height: 300px; padding: 20px; color: #fff;line-height: 20px; background: #000; overflow-y: scroll;}
+    </style>
+  </head>
+<body>
+  <div class="container" id="container">
+    <div class="planet"></div>
+  </div>
+  <div class="commend-box" id="commend-box">
+  </div>
+  <div class="control-box" id="control">
+    <button id="bulid">创建新飞船</button>
+  </div>
+  <script type="text/javascript" src="./js/task26.js"></script>
+</body>
+</html>
