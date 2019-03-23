@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE2016 Task 38</title>
+    <style type="text/css">
+    *{margin: 0;padding: 0;}
+    table{width: 600px;margin: 20px auto;}
+    thead{color: #fff; background: #000;}
+    table th{cursor: pointer;}
+    table th,table td{width: 20%; height: 40px;line-height: 40px;text-align: center;}
+    td{border:1px solid #ccc;}
+    td:nth-of-type(n){border-left: none;}
+    td:first-child{border-left: 1px solid #ccc;}
+    span{display: inline-block;}
+    i{display: block; width:0;height: 0;  border-style: solid; }
+    i.up{ margin-bottom: 4px;border-width:0 6px 6px; border-color:transparent transparent #fff;}
+    i.down{border-width: 6px 6px 0; border-color:#fff transparent transparent;}
+    </style>
+  </head>
+<body>
+  <table>
+    <thead>
+    <tr id="head">
+      <th>姓名</th>
+      <th id="chinese">语文<span><i class="up"></i><i class="down"></i></span></th>
+      <th id="math">数学<span><i class="up"></i><i class="down"></i></span></th>
+      <th id="english">英语<span><i class="up"></i><i class="down"></i></span></th>
+      <th id="acount">总分<span><i class="up"></i><i class="down"></i></span></th>
+    </tr>
+    </thead>
+    <tbody id="body">
+    </tbody>
+  </table>
+  <script type="text/javascript" src="./js/task38.js"></script>
+</body>
+</html>
